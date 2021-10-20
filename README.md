@@ -1,4 +1,4 @@
-😱 **Not stable yet**, although the sources are *somewhat useable already* (the API's used in [./examples](./examples) are **not** expected to change).
+# 😱 **Not stable yet**, although the sources are *somewhat useable already* (the API's used in [./examples](./examples) are **not** expected to change).
 
 
 ### PHP bindings for the famous [tree-sitter](https://github.com/tree-sitter/tree-sitter) library, thanks to FFI (available since php 7.4).
