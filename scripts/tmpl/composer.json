@@ -1,0 +1,14 @@
+{
+    "name": "talbergs/tree-sitter-{{ $grammar }}",
+    "keywords": ["ffi", "libtree-sitter", "tree-sitter", "{{ $grammar }}", "tree-sitter-{{ $grammar }}"],
+    "version" : "{{ $VERSION }}",
+    "autoload": {
+        "files": [
+            "grammar.php"
+        ]
+    },
+    "require": {
+        "php": ">=8.0.0",
+        "ext-ffi" : "*"
+    }
+}

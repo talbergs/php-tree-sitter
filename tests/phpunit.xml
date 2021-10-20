@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+    colors="true"
+    processIsolation="true"
+    verbose="true"
+    testdox="true"
+    cacheResultFile=".cache/.result.cache"
+>
+
+    <testsuites>
+        <testsuite name="grammars">
+            <directory>grammars</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage
+          cacheDirectory=".cache"
+          includeUncoveredFiles="true"
+          processUncoveredFiles="false"
+          pathCoverage="true"
+          ignoreDeprecatedCodeUnits="true"
+          disableCodeCoverageIgnore="false"
+        >
+
+        <include>
+            <directory>../binding/src</directory>
+            <directory>../grammars</directory>
+        </include>
+
+        <report>
+            <text
+                outputFile="php://stdout"
+                showUncoveredFiles="false"
+                showOnlySummary="false"
+            />
+
+            <html
+                outputDirectory=".cache"
+                lowUpperBound="50"
+                highLowerBound="90"
+            />
+        </report>
+
+    </coverage>
+
+</phpunit>

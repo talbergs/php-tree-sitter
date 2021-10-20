@@ -1,0 +1,29 @@
+{
+    "repositories": {
+        "binding": {
+            "type": "path",
+            "url": "../binding"
+        },
+        "php-grammar": {
+            "type": "path",
+            "url": "../grammars/php"
+        },
+        "javascript-grammar": {
+            "type": "path",
+            "url": "../grammars/javascript"
+        }
+    },
+    "require": {
+        "talbergs/tree-sitter": "^0.19.0",
+        "talbergs/tree-sitter-php": "^0.19.0",
+        "talbergs/tree-sitter-javascript": "^0.19.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "files": [
+            "./BaseCase.php"
+        ]
+    }
+}
