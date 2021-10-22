@@ -1,0 +1,84 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0a952a4f6b2d337fc7d2b6c8dbb0d7c7",
+    "packages": [
+        {
+            "name": "talbergs/tree-sitter",
+            "version": "0.19.0",
+            "dist": {
+                "type": "path",
+                "url": "../../binding",
+                "reference": "23a1ad4f1b596af4d390a3ed8495917ea6c392d5"
+            },
+            "require": {
+                "ext-ffi": "*",
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-stubs": "^2021.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TS\\": "src/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PHP bindings to the tree-sitter C library.",
+            "homepage": "https://talbergs.dev",
+            "keywords": [
+                "ffi",
+                "libtree-sitter",
+                "php",
+                "tree-sitter"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "talbergs/tree-sitter-php",
+            "version": "v0.19.0",
+            "dist": {
+                "type": "path",
+                "url": "../../grammars/php",
+                "reference": "2f91dcea76724df7c3d4bca091f3f56f76ee2f61"
+            },
+            "require": {
+                "ext-ffi": "*",
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "grammar.php"
+                ]
+            },
+            "keywords": [
+                "ffi",
+                "libtree-sitter",
+                "php",
+                "tree-sitter",
+                "tree-sitter-php"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
