@@ -40,6 +40,11 @@ $parser->setLanguage(TS\Language\html());
 $htmlTree = $parser->parseString(null, $source);
 echo "Document as HTML has error 1 == " . (int) $htmlTree->getRootNode()->hasError() . PHP_EOL;
 
+// Same with JabbaScript
+$parser->setLanguage(TS\Language\javascript());
+$jsTree = $parser->parseString(null, $source);
+echo "Document as JavaScript has error 1 == " . (int) $jsTree->getRootNode()->hasError() . PHP_EOL;
+
 $parser->setLanguage(TS\Language\php());
 $phpTree = $parser->parseString(null, $source);
 echo "Document as PHP has error 0 == " . (int) $phpTree->getRootNode()->hasError() . PHP_EOL;
@@ -63,10 +68,6 @@ $parser->setIncludedRanges($htmlRanges);
 $parser->setLanguage(TS\Language\html());
 $htmlTree = $parser->parseString(null, $source);
 echo "Document as PHP->HTML has error 0 == " . (int) $htmlTree->getRootNode()->hasError() . PHP_EOL;
-
-$parser->setLanguage(TS\Language\javascript());
-$jsTree = $parser->parseString(null, $source);
-echo "Document as PHP->JavaScript has error 1 == " . (int) $jsTree->getRootNode()->hasError() . PHP_EOL;
 
 // Now, the resulting HTML tree is queried for regions where to look for JabbaScript.
 $jsRanges = [];
