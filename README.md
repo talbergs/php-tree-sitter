@@ -1,5 +1,9 @@
 # 😱 **Not stable yet**, although the sources are *somewhat useable already* (the API's used in [./examples](./examples) are **not** expected to change).
 
+Contributions are very welcome! Just start your project and use this library,
+your project will be also plugged here and this library will be adjusted
+to fit everyones needs, just submit PR or open an issue.
+
 
 ### PHP bindings for the famous [tree-sitter](https://github.com/tree-sitter/tree-sitter) library, thanks to FFI (available since php 7.4).
 
