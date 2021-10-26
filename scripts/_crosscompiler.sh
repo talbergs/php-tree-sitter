@@ -10,9 +10,9 @@ _crosscompiler() {
     shift 2
 
     # Why php grammar cannot compile for "darwin64 darwin64h darwin32 win64 win32"?
-    # for target in x86_64 armv5 armv7 aarch64 darwin64 darwin64h darwin32 win64 win32
-    # for target in x86_64
-    for target in x86_64 armv5 armv7 aarch64
+
+    # for target in x86_64 armv5 armv7 aarch64
+    for target in x86_64-linux-gnu
     do
         echo -n "$target "
         docker run \

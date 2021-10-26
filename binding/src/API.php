@@ -22,9 +22,23 @@ class API
         static $ffi;
 
         if (!$ffi) {
+            // https://clang.llvm.org/docs/CrossCompilation.html
+            $arch = php_uname('m');
+            $vendor = match (PHP_OS_FAMILY) {
+                'Linux', 'BSD' => 'linux',
+                'Darwin' => 'apple',
+                'Windows' => 'w64',
+            };
+            $abi = match (PHP_OS_FAMILY) {
+                'Linux', 'BSD' => 'gnu',
+                'Darwin' => 'darwin',
+                'Windows' => 'mingw32',
+            };
+
+            $bin = sprintf('%s-%s-%s.%s', $arch, $vendor, $abi, PHP_SHLIB_SUFFIX);
             $ffi = FFI::cdef(
                 file_get_contents(__DIR__ . '/../builds/header.h'),
-                __DIR__ . '/../builds/' . php_uname('m') . '.so',
+                __DIR__ . '/../builds/' . $bin,
             );
         }
 
