@@ -3,6 +3,7 @@
   "keywords": [
     "ffi",
     "libtree-sitter",
+    "tree-sitter",
     "{{ $grammar }}",
     "tree-sitter-{{ $grammar }}"
   ],
