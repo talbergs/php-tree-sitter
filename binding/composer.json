@@ -1,20 +1,25 @@
 {
-    "name": "talbergs/tree-sitter",
-    "description": "PHP bindings to the tree-sitter C library.",
-    "keywords": ["php", "ffi", "libtree-sitter", "tree-sitter"],
-    "homepage": "https://talbergs.dev",
-    "license": "BSD-3-Clause",
-    "version" : "0.19.0",
-    "require": {
-        "php": ">=8.0.0",
-        "ext-ffi" : "*"
-    },
-    "autoload" : {
-        "psr-4": {
-            "TS\\": "src/"
-        }
-    },
-    "require-dev": {
-        "jetbrains/phpstorm-stubs": "^2021.2"
+  "name": "talbergs/tree-sitter",
+  "description": "PHP bindings to the tree-sitter C library.",
+  "keywords": [
+    "php",
+    "ffi",
+    "libtree-sitter",
+    "tree-sitter"
+  ],
+  "homepage": "https://talbergs.dev",
+  "license": "BSD-3-Clause",
+  "version": "0.19.0-rc1",
+  "require": {
+    "php": ">=8.0.0",
+    "ext-ffi": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "TS\\": "src/"
     }
+  },
+  "require-dev": {
+    "jetbrains/phpstorm-stubs": "^2021.2"
+  }
 }
