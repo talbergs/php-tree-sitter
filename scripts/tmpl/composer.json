@@ -1,7 +1,7 @@
 {
     "name": "talbergs/tree-sitter-{{ $grammar }}",
     "keywords": ["ffi", "libtree-sitter", "tree-sitter", "{{ $grammar }}", "tree-sitter-{{ $grammar }}"],
-    "version" : "{{ $VERSION }}",
+    "version": "{{ $VERSION }}",
     "autoload": {
         "files": [
             "grammar.php"
