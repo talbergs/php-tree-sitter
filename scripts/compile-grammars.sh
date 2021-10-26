@@ -26,6 +26,7 @@ do
 
     composer-tmpl $grammar $VERSION > $ROOT/grammars/$grammar/composer.json
     grammar-tmpl $grammar > $ROOT/grammars/$grammar/grammar.php
+    echo '/vendor/' > $ROOT/grammars/$grammar/.gitignore
 
     grammar_files=(-I ./src)
 

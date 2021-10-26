@@ -7,7 +7,7 @@
     "html",
     "tree-sitter-html"
   ],
-  "version": "0.19.0-rc2",
+  "version": "0.19.0-rc3",
   "license": "BSD-3-Clause",
   "autoload": {
     "files": [
