@@ -91,3 +91,6 @@ i.e. `0.19.0-1.3.22`
 # Credits:
 - God
 - https://github.com/tree-sitter/tree-sitter
+- https://elib.uni-stuttgart.de/bitstream/11682/10299/1/SKilL%20Language%20Server.pdf (chapter 4)
+- https://github.com/php-ffi
+- https://php.watch/versions/8.1/fibers
